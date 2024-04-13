@@ -66,8 +66,10 @@ SensorData STMSensor::parseSensorData(const std::string& data)
     SensorData result;
     std::istringstream ss(data);
     char comma;
-    ss >> result.tc1 >> comma >> result.tc2 >> comma >> result.tc3 >> comma
-       >> result.loadcell1 >> comma >> result.loadcell2 >> comma >> result.loadcell3 >> comma >> result.loadcell4;
+    ss >> result.adc1 >> comma >> result.adc2 >> comma >> result.adc3 >> comma
+        >> result.adc4 >> comma >> result.adc5 >> comma >> result.adc6 >> comma >> result.adc7;
+    // ss >> result.tc1 >> comma >> result.tc2 >> comma >> result.tc3 >> comma
+    //    >> result.loadcell1 >> comma >> result.loadcell2 >> comma >> result.loadcell3 >> comma >> result.loadcell4;
     return result;
 }
 

@@ -8,11 +8,11 @@
 struct SensorData {
     double adc1;
     double adc2;
-    double adc2;
     double adc3;
     double adc4;
     double adc5;
     double adc6;
+    double adc7;
 };
 
 class STMSensor {
